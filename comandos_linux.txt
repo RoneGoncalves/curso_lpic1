@@ -1,0 +1,32 @@
+DESCRIÇÃO PESSOAL MINHA DOS COMANDO DO LINUX DE ACORDO COM O UQE EU APRENDI N0 CURSO 
+DA LPIC-1
+
+
+Este arquivo deve servir para os meus estudos a respeito dos comandos do Linux, mas também para praticar o uso do GIT.
+
+AULA - 22
+
+# tr 
+-> Este comando serve para alterar o conteudo de um texto, substitiur algum caractere ou mesmo deletar 
+um caractere. Este comando deve ser utilizado com o " | " e um outro comando que exiba textos. Por exemplo:
+              ~$ cat arq.txt | tr a-z A-z
+Neste comando eu estou transformando todas as letrar de a à z minúsculos  em A á Z maiúsclos.
+Podemos fazer uma auteração de cada vez, ou mesmo realizar várias ao mesmo tempo.
+Após o pipe digitamos tr, espaço o primeiro ítem ou grupo de ítens a serem modificados, espaço e os ítens
+que os substituirão.  " | tr i I" ou " | tr aeiou AEIOU"
+Usamos o " - " para estipular um range de atuação nos elementos a serem modificados nos dois campos.
+Ex: " | tr a-z A-z" ou " | tr 0-9 1 ">. O primeiro exmplo transforma caixa baixa em caixa alta e o segundo transforma 
+todos os mumeros de 0 a 9 em 1.
+tr -d => Usa-se este comando para deletar algum caractere ou partes do arquivo
+Ex: ~$ cat arq,txt | tr -d [:blank:] Este comando irá eliminar todos os espaços em branco do arquivo.
+OBS: ver tr --help para ver sobre esta forma de syntax que usa couchetes.
+
+# cut
+=> O comando cut é um comando utilizado para cortar partes de un texto. Podemos delimitar por caracteres e por campos as partes de um texto, e separ somente aquelas que nos interessam.
+$ cut -c1-5 alunos.txt => 
+
+
+
+
+
+
